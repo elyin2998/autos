@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,6 +11,7 @@
     <link href="{{ asset('static/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
 
 </head>
+
 <body class="hold-transition sidebar-mini layout-fixed">
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -51,18 +53,15 @@
         <form method="POST" action="/users">
             @csrf
             <div class="form-group">
-                <label for="exampleInputEmail1">Email address</label>
-                <input type="email" class="form-control" name="exampleInputEmail1" id="exampleInputEmail1" aria-describedby="emailHelp">
-                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                <label for="numero_uno">Número Uno</label>
+                <input type="number" class="form-control" name="numero_uno" id="numero_uno" aria-describedby="emailHelp">
             </div>
+
             <div class="form-group">
-                <label for="exampleInputPassword1">Password</label>
-                <input type="password" class="form-control" id="exampleInputPassword1">
+                <label for="numero_dos">Número Dos</label>
+                <input type="number" class="form-control" name="numero_dos" id="numero_dos" aria-describedby="emailHelp">
             </div>
-            <div class="form-group form-check">
-                <input type="checkbox" name="exampleCheck1" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Check me out</label>
-            </div>
+
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
     </div>
@@ -70,4 +69,5 @@
     <script src="{{ asset('static/vendor/jquery.slim.min.js') }}"></script>
     <script src="{{ asset('static/bootstrap/js/bootstrap.js') }}"></script>
 </body>
+
 </html>
