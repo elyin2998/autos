@@ -15,7 +15,7 @@
 <body class="hold-transition sidebar-mini layout-fixed">
 
     @yield('menu',View::make('navegacion.menu'))
-    <div class="container-fluid mt-3">
+    <div class="container mt-3">
         @yield('contenido')
     </div>
 

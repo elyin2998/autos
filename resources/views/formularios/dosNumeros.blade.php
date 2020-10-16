@@ -12,6 +12,6 @@
         <input type="number" class="form-control" name="numero_dos" id="numero_dos" aria-describedby="emailHelp">
     </div>
 
-    <button type="submit" class="btn btn-primary">Submit</button>
+    <button type="submit" class="btn btn-primary">Sumar</button>
 </form>
 @endsection
