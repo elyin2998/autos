@@ -1,6 +1,6 @@
 @extends('plantilla')
 @section('contenido')
-<form method="POST" action="/users">
+<form method="POST" action="/suma">
     @csrf
     <div class="form-group">
         <label for="numero_uno">Número Uno</label>
