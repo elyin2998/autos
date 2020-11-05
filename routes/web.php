@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/', function () {
-    return view('formularios.Biemvenida');
+    return view('formularios.Bienvenida');
 });
 
 Route::get('/vehiculos', function () {
